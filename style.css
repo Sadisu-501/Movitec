@@ -14,11 +14,11 @@ nav {
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: start;
   justify-content: center;
   position: relative;
-  padding-top: 2rem;
-  margin-bottom: 100px;
+  padding-top: 0.5rem;
+  margin-bottom: 70px;
 }
 .menu {
   display: none;
@@ -28,9 +28,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  border-radius: 50px;
-  padding: 0.5rem;
-  width: 90%;
+  border-radius: 20px;
+  width: 100%;
+  padding: 0.5rem 1rem;
   animation: slideFadeIn 1s ease-out forwards;
 }
 span {
@@ -83,7 +83,7 @@ span {
   border-radius: 100px;
 }
 .nav-icons button {
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 50px;
   width: 100%;
   border: none;
@@ -178,21 +178,7 @@ span {
 }
 
 footer {
-  background-image: linear-gradient(
-    to right top,
-    #5c0637,
-    #6c295a,
-    #78467d,
-    #7f63a0,
-    #8380c0,
-    #6a82bb,
-    #5582b3,
-    #4681a7,
-    #296277,
-    #1c434a,
-    #142626,
-    #000403
-  );
+  background-image: linear-gradient(to right top, #5c0637, #6c295a, #78467d, #7f63a0, #8380c0, #6a82bb, #5582b3, #4681a7, #296277, #1c434a, #142626, #000403);
   margin-bottom: 0;
 }
 
@@ -240,7 +226,9 @@ footer {
   color: #007bff;
   cursor: pointer;
   font-size: 20px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
   background-color: gray;
   color: white;
   padding: 0.3rem;
@@ -381,28 +369,36 @@ hr {
   .nav-contents {
     display: none;
   }
+
   nav {
-    padding-top: 0.2rem;
-    margin-bottom: 50px;
+    background-image: url(img/career\ talk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .nav-icons ion-icon {
+    display: none;
+  }
+  .menuBtn {
+    margin: 0 auto;
   }
 
   .nav-icons button {
-    padding: 1rem;
+    padding: 0.9rem 2rem;
     border-radius: 50px;
     width: 100%;
   }
+
   .container {
     background-color: black;
-
-    margin-top: 1rem;
   }
+
   .menuBtn {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    margin-top: 20px;
-    margin-right: 25px;
     color: slateblue;
+    margin: 0 auto;
   }
   .menu {
     display: flex;
@@ -413,7 +409,7 @@ hr {
     left: 0;
     background-color: #fff;
     width: 100%;
-    height: 55vh;
+    height: 100vh;
     padding: 1rem;
     z-index: 3;
   }
@@ -429,6 +425,7 @@ hr {
     color: #000;
     cursor: pointer;
     text-align: center;
+    margin-top: 1rem;
   }
   .menu a:hover {
     color: slateblue;
@@ -470,26 +467,18 @@ hr {
 
 /* Responsive design for mobile devices */
 @media screen and (max-width: 480px) {
-  nav {
-    background-image: url(img/conf-5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
   .center-text {
     display: none;
   }
   .container {
-    padding: 0 1rem;
-    margin: 0rem;
+    padding: 0.3rem 1rem;
   }
-  .nav-icons ion-icon {
-    display: none;
-  }
+
   .logo {
     padding: 0;
   }
   .nav-icons button {
-    padding: 0.8rem;
+    padding: 0.8rem 2rem;
     font-size: 0.7rem;
   }
   .card-container {

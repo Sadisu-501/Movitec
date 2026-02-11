@@ -13,3 +13,4 @@ function removeClass() {
     menu.classList.add("close");
   }
 }
+
