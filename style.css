@@ -374,7 +374,7 @@ hr {
     background-image: url(img/career\ talk.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 70vh;
+    height: 60vh;
   }
 
   .nav-icons ion-icon {
@@ -391,7 +391,8 @@ hr {
   }
 
   .container {
-    background-color: black;
+    background-color: #000;
+    margin-top: 0;
   }
 
   .menuBtn {
@@ -435,7 +436,7 @@ hr {
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     padding: 4rem;
   }
   .footer-container-1 {
@@ -468,9 +469,12 @@ hr {
 
 /* Responsive design for mobile devices */
 @media screen and (max-width: 480px) {
+  .nav {
+    height: 50vh;
+  }
   .center-text {
     bottom: 0;
-    top: 150px;
+    top: 100px;
     margin: 0 auto;
   }
   .container {
